@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @member.title
+%p
+  %b Description:
+  = @member.description
+%p
+  %b Member name:
+  = @member.member_name
+%p
+  %b Detail bio:
+  = @member.detail_bio
+
+= link_to 'Edit', edit_member_path(@member)
+\|
+= link_to 'Back', members_path
